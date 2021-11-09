@@ -1,0 +1,3 @@
+: ${BIN_DIR:=/data/bin}
+cd $BIN_DIR
+printf 'https://app.sushi.com/%s\n' */* | sort > INDEX
