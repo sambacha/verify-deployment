@@ -2,6 +2,8 @@
 
 > Censorship Resistant Tooling (Server/Client)
 
+[see https://github.com/waysact/webpack-subresource-integrity](https://github.com/waysact/webpack-subresource-integrity)
+
 ## git deployments 
 
 > TODO
