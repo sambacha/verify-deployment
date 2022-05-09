@@ -1,0 +1,25 @@
+{
+    "name": "dapp-verify-deploy",
+    "version": "0.0.0",
+    "private": true,
+    "license": "ISC",
+    "scripts": {
+        "build": "NODE_ENV=production npx next build",
+        "version": "npm run build",
+        "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx --fix",
+        "get:version": "node -pe \"require('./package.json').version\"",
+        "integration-test": "start-server-and-test 'serve build -l 3000'"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
